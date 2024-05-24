@@ -1,0 +1,11 @@
+<h1> My Lists </h1>
+<% @lists.each do |list| %>
+<button type="button" class="btn btn-outline-secondary" style="text-decoration:none" data-toggle="modal" data-target=".bd-example-modal-lg"> <%= link_to list.name, list_path(list) %></button>
+  <% end %>
+
+<div>
+<%= link_to 'Add new movie List', new_list_path %>
+</div>
+
+
+<!-- Large modal -->
